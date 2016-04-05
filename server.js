@@ -162,7 +162,7 @@ app.post('/users/login', function(req, res){
 
 // {force: true} - delete the database
 db.sequelize.sync({
-	//force: true
+	force: true
 }).then(function(){
 	app.listen(PORT, function(){
 		console.log('Done ' + PORT);
